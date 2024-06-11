@@ -1,4 +1,4 @@
-package br.com.unifor;
+package br.com.unifor.resource;
 
 import org.eclipse.microprofile.graphql.DefaultValue;
 import org.eclipse.microprofile.graphql.Description;

@@ -58,3 +58,12 @@ If you want to learn more about building native executables, please consult http
 Start coding with this Hello GraphQL Query
 
 [Related guide section...](https://quarkus.io/guides/smallrye-graphql)
+
+## GraphQL UI
+
+http://localhost:8080/q/graphql-ui
+
+## Postgres docker command
+```shell script
+docker run --name graphql-db -e POSTGRES_DB=graphql-db -e POSTGRES_USER=username -e POSTGRES_PASSWORD=password -v $(pwd)/src/main/resources/import.sql:/docker-entrypoint-initdb.d/import.sql -p 5432:5432 -d postgres:latest
+```
